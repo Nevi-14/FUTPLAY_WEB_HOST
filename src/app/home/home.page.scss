@@ -5,8 +5,8 @@ ion-content{
 }
 
 .container {
-  min-height: 80vh;
-  height: 80vh;
+  min-height: 100vh;
+  height: 100vh;
   position: relative;
   color: #fff;
   .img-container {
@@ -60,10 +60,17 @@ h1{
 h3{
   font-size: 3rem;
 }
-
+ion-segment {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  width: 600px;
+  --background:#fff;
+  padding: 0.5rem;
+}
 ion-segment-button{
   --indicator-box-shadow: transparent!important;
-  border-radius: 2.5rem !important;
+  //border-radius: 2.5rem !important;
   margin: 0;
   height: 3rem;
   min-height: 3rem;
