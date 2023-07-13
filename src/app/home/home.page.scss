@@ -26,6 +26,14 @@ ion-content{
   min-height: 100vh;
   height:  100vh
 }
+.small-img{
+  height: 200px;
+}
+.center-text{
+  display:flex;
+  justify-content:center;
+  align-items:center
+}
 .container-div {
   .img-container {
   position: absolute;
