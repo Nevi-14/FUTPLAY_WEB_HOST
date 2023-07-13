@@ -1,0 +1,89 @@
+ 
+
+ion-content{
+  --background: #a0a;
+}
+
+.container {
+  min-height: 80vh;
+  height: 80vh;
+  position: relative;
+  color: #fff;
+  .img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url("/assets/vectors/main.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }
+}
+.container-div{
+  position: relative;
+  min-height: 100vh;
+  height:  100vh
+}
+.container-div {
+  .img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("/assets/vectors/cropVector1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+.center-container{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+ion-grid, ion-row, ion-col{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-size: 6rem;
+}
+h3{
+  font-size: 3rem;
+}
+
+ion-segment-button{
+  --indicator-box-shadow: transparent!important;
+  border-radius: 2.5rem !important;
+  margin: 0;
+  height: 3rem;
+  min-height: 3rem;
+  --background:white;
+  --color:#2d2e87;
+  --background-checked: linear-gradient(to right, #2d2e87, #0083CB)!important;
+  --color-checked: white;
+  --indicator-color : transparent!important; /* this solution */
+
+  }
+  .imgs{
+    img{
+      display: block;
+      height: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  .center-img{
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+  }
