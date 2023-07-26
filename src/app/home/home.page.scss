@@ -1,12 +1,12 @@
   
  
 ion-content{
-  --background: #a0a;
+  --background: var(--ion-color-primary);
 }
 
 .container {
   min-height: 100vh;
-  height: 100vh;
+  min-width: 100vw;
   position: relative;
   color: #fff;
   .img-container {
@@ -15,10 +15,12 @@ ion-content{
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url("/assets/vectors/main.svg");
+    background-image: url("/assets/images/main.jpg");
+    min-height: 100vh;
+    min-width: 100vw;
+    background-position: 50% calc(50% - 50px);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    
   }
 }
 .container-div{
@@ -32,24 +34,26 @@ ion-content{
 .center-text{
   display:flex;
   justify-content:center;
-  align-items:center
+  align-items:center;
 }
+
 .container-div {
   .img-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  //background-image: url("/assets/vectors/cropVector1.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100% 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    //background-image: url("/assets/vectors/cropVector1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-}
+
 .center-container{
   position: absolute;
   left: 0;
@@ -58,36 +62,46 @@ ion-content{
   transform: translateY(-50%);
   text-align: center;
 }
+
+h3{
+  font-family: 'Rockybilly', sans-serif;
+  font-size: 40px;
+  margin-top: 0;
+}
+
 ion-grid, ion-row, ion-col{
   margin: 0;
   padding: 0;
 }
-h1{
-  font-size: 6rem;
-}
-h3{
-  font-size: 3rem;
-}
+
 ion-segment {
   position: absolute;
   top: 1rem;
   right: 2rem;
-  width: 600px;
+  width: 500px;
+  height: auto;
+  border-radius: 5px;
   --background:#fff;
   padding: 0.5rem;
 }
 ion-segment-button{
   --indicator-box-shadow: transparent!important;
   //border-radius: 2.5rem !important;
-  margin: 0;
-  height: 3rem;
-  min-height: 3rem;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid white;
+  min-width: auto;
+  text-transform: none;
+  font-size: 18px;
+  font-weight: bold;
   --background:white;
-  --color:#2d2e87;
-  --background-checked: linear-gradient(to right, #2d2e87, #0083CB)!important;
+  --color:var(--ion-color-primary);
+  --background-checked: var(--ion-color-primary)!important;
   --color-checked: white;
   --indicator-color : transparent!important; /* this solution */
-
+  &:hover {
+    border: 1px solid var(--ion-color-primary);
+  }
   }
   .imgs{
     img{
@@ -102,3 +116,11 @@ ion-segment-button{
     display: block;
     margin: 0 auto;
   }
+
+#main-title{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 350px;
+  letter-spacing: -10px;
+  margin-bottom: 0;
+}
