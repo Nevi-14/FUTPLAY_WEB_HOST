@@ -1,276 +1,230 @@
- 
-
 <ion-content [fullscreen]="true">
-
-  <div class="container">
-    <ion-grid class="img-container">
-      <span class="center-container ">
-     
-        <ion-row>
-          <ion-col size="12">
-            <h1 id="main-title">FUTPLAY</h1>
-          </ion-col>
-          <ion-col size="12">
-            <h3 id="main-subtitle">Reviving The Dream</h3>
-          </ion-col>
-        </ion-row>
-      </span>
-    </ion-grid>
-    <ion-segment id="navbar" value="home" (ionChange)="segmentChanged($event)">
-      <ion-segment-button value="home">
-        <ion-label>Home</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="tournament">
-        <ion-label>Tournament</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="about">
-        <ion-label>About Us</ion-label>
-      </ion-segment-button>
-      <ion-segment-button value="contact">
-        <ion-label>Contact</ion-label>
-      </ion-segment-button>
-    </ion-segment>
-  </div>
-
-  <div class="container-div">
-    <ion-grid class="img-container">
-      <ion-row  >
-        <ion-col size="6">
-          <ion-img class="small-img" src="../assets/vectors/BookBrand_sinfondo1.svg"></ion-img>
-        </ion-col>
-        <ion-col size="6"  class="center-text">
-          <p class="ion-margin">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam blanditiis ab accusamus dolore in obcaecati.
-            Aliquam, optio deleniti non dolores neque eos ipsa error eveniet molestiae at nulla quos ad.
-          </p>
-        </ion-col>
-        <ion-col size="12">
-
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
-
-  <div class="container-div">
-    <ion-grid>
-      <ion-row>
-        <ion-col size="6">
-          <ion-row>
-
-
-            <ion-col size="12">
-              <h4 class="ion-margin">What is</h4>
-              <h5 class="ion-margin">FUTPLAY?</h5>
-            </ion-col>
-            <ion-col size="12">
-              <p class="ion-margin">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis, suscipit repellendus dicta maiores
-                accusamus magni dolores sapiente voluptate officiis distinctio ratione quasi sunt eligendi, molestias
-                nostrum placeat atque. Pariatur, explicabo!
-              </p>
-            </ion-col>
-
-          </ion-row>
-        </ion-col>
-        <ion-col size="6">
-          <ion-row>
-            <ion-col size="4">
-              <img src="../assets/vectors/Izquierda.svg" alt="">
-            </ion-col>
-              <ion-col size="4">
-                <img src="../assets/vectors/Adrenaline.svg" alt="">
-              </ion-col>
-              <ion-col size="4">
-                <img src="../assets/vectors/Derecha.svg" alt="">
-              </ion-col>
-          </ion-row>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
-
-  <div class="container-div">
-    <ion-grid >
-      <ion-row class="imgs">
-        <ion-col size="4">
-          <img src="../assets/vectors/team.svg" alt="">
-        </ion-col>
-        <ion-col size="4">
-          <img src="../assets/vectors/team.svg" alt="">
-        </ion-col>
-        <ion-col size="4">
-          <img src="../assets/vectors/team.svg" alt="">
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
-
-
-  <div class="container-div">
-    <ion-grid >
-      <ion-row>
-        <ion-col size="12">
-          <h4 class="ion-margin">Where to find</h4>
-          <h5 class="ion-margin">FUTPLAY</h5>
-        </ion-col>
-        <ion-col size="6">
-       <ion-row>
-        <ion-col size="12">
-          <h4 class="ion-margin">Mobile App</h4>
-          <p class="ion-margin">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus a, rerum tempore cupiditate quia quod dolorem placeat nisi beatae velit corrupti eum sunt doloremque. Quis, adipisci! Repellat, consequatur maxime.
-          </p>
-        </ion-col>
-        <ion-col size="6">
-          <ion-button class="ion-margin" fill="solid"  color="light" >
-           Android
-          </ion-button>
-          <ion-button  class="ion-margin" fill="solid"  color="light" >
-            Ios
-           </ion-button>
-        </ion-col>
-   
-       </ion-row>
-        </ion-col>
-        <ion-col size="6">
-          <img  class="center-img" src="../assets/vectors/telefonos1.svg" alt="">
-           </ion-col>
-       
-       </ion-row>
-    </ion-grid>
-  </div>
-
-
-
- 
-
-  
-  <div class="container-div">
-    <ion-grid >
-      <ion-row>
- 
- 
-        <ion-col size="6">
-          <img  class="center-img" src="../assets/vectors/reservacione1.svg" alt="">
-           </ion-col>
-           <ion-col size="6">
+   <div class="container">
+      <div class="background-img">
+         <ion-grid class="container-div" id="landing">
+            <span class="center-container">
+               <ion-row>
+                  <ion-col size="12">
+                     <h1 id="main-title">FUTPLAY</h1>
+                  </ion-col>
+                  <ion-col size="12">
+                     <h3 class="rockybilly" id="main-subtitle">Reviving The Dream</h3>
+                  </ion-col>
+               </ion-row>
+            </span>
+         </ion-grid>
+         <ion-segment id="navbar" value="home" (ionChange)="segmentChanged($event)">
+            <ion-segment-button value="home">
+               <ion-label>Home</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="tournament">
+               <ion-label>Tournament</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="about">
+               <ion-label>About Us</ion-label>
+            </ion-segment-button>
+            <ion-segment-button value="contact">
+               <ion-label>Contact</ion-label>
+            </ion-segment-button>
+         </ion-segment>
+      </div>
+      <div class="half-container-div" id="sub-landing">
+         <ion-grid class="center-container">
             <ion-row>
-             <ion-col size="12">
-               <h4 class="ion-margin">Reservation System</h4>
-               <p class="ion-margin">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus a, rerum tempore cupiditate quia quod dolorem placeat nisi beatae velit corrupti eum sunt doloremque. Quis, adipisci! Repellat, consequatur maxime.
-               </p>
-             </ion-col>
-             <ion-col size="6">
-               <ion-button class="ion-margin" fill="solid"  color="light" >
-                Fill Form
-               </ion-button>
-               
-             </ion-col>
-        
-            </ion-row>
-             </ion-col>
-       </ion-row>
-    </ion-grid>
-  </div>
-
-
-
-  
-  
-  <div class="container-div">
-    <ion-grid >
-      <ion-row>
-        <ion-col size="12">
-          <h4 class="ion-margin">Tournaments</h4>
-          <h5 class="ion-margin">To be announced...</h5>
-        </ion-col>
- 
-        <ion-col size="6">
-          <img  class="center-img" src="../assets/vectors/IMG_3259 1.svg" alt="">
-           </ion-col>
-           <ion-col size="6">
-            <ion-row>
-             <ion-col size="12">
-               <h4 class="ion-margin">32 teams</h4>
-               <p class="ion-margin">
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus a, rerum tempore cupiditate quia quod dolorem placeat nisi beatae velit corrupti eum sunt doloremque. Quis, adipisci! Repellat, consequatur maxime.
-               </p>
-             </ion-col>
-             <ion-col size="6">
-               <ion-button class="ion-margin" fill="solid"  color="light" >
-                Know more
-               </ion-button>
-               
-             </ion-col>
-        
-            </ion-row>
-             </ion-col>
-       </ion-row>
-    </ion-grid>
-  </div>
-
-
-  <div class="container-div">
-    <ion-grid >
-      <ion-row>
-        <ion-col size="12">
-          <h4 class="ion-margin">Traction</h4>
-          <h5 class="ion-margin">Up to date</h5>
-        </ion-col>
- 
-        <ion-col size="4">
-          <img  class="center-img" src="../assets/vectors/IMG_3259 1.svg" alt="">
-           </ion-col>
-           <ion-col size="4">
-            <img  class="center-img" src="../assets/vectors/IMG_3259 1.svg" alt="">
-             </ion-col>
-             <ion-col size="4">
-              <img  class="center-img" src="../assets/vectors/IMG_3259 1.svg" alt="">
+               <ion-col size="2" offset="3">
+                  <ion-img class="logo" src="../assets/vectors/BookBrand_sinfondo1.svg"></ion-img>
                </ion-col>
-   
-               <ion-col size="6">
-                <img  class="ion-margin" src="../assets/vectors/Fields.svg" alt="">
-                 </ion-col>
-                 <ion-col size="6">
-                  <img  class="ion-margin" src="../assets/vectors/Fields.svg" alt="">
-                   </ion-col>
-                   <ion-col size="12">
-                    <ion-toolbar  color="any">
-          <ion-grid >
-            <ion-row>
-              <ion-col size="12" class="ion-text-center">
-               <h5>
-                &copy; {{year}} FUTPLAY
-                <br>
-                <p>
-                  Official Website
-                </p>
-               </h5>
-           
-               
-        
-              </ion-col>
-         <ion-col size="12">
-          <ion-header  mode="ios">
-            <ion-toolbar   color="any"  class="ion-text-center">
-              <ion-label>Privacy Policies</ion-label>
-            </ion-toolbar>
-          </ion-header>
-         </ion-col>
-        
+               <ion-col size="4" class="center-text">
+                  <p class="ion-margin heavy-font">
+                     Play exhilarating soccer matches, build dream teams with friends, and rent top soccer venues within clicks.
+                  </p>
+               </ion-col>
+               <ion-col size="12">
+               </ion-col>
             </ion-row>
-          </ion-grid>
-                    </ion-toolbar>
-                   </ion-col>
-       </ion-row>
-    </ion-grid>
-  </div>
+         </ion-grid>
+      </div>
+      <div class="container-div">
+         <ion-grid class="center-container">
+            <ion-row>
+               <ion-col size="6">
+                  <ion-row>
+                     <ion-col size="12">
+                        <h4 class="ion-margin rockybilly pink-font">What is</h4>
+                        <h4 class="ion-margin purple-font" id="whatis-title">FUTPLAY ?</h4>
+                     </ion-col>
+                     <ion-col size="12">
+                        <p class="ion-margin">
+                           We are on a mission to keep the <b>soccer dream</b> alive and bring the heat!
+                        </p>
+                        <p class="ion-margin">
+                           FutPlay is the only app and reservation system that creates lifelong experiences
+                           for <b>soccer enthusiasts</b> who want to make their team triumph in an era where sports
+                           success is limited.
+                        </p>
+                     </ion-col>
+                  </ion-row>
+               </ion-col>
+               <ion-col size="6">
+                  <ion-row>
+                     <ion-col class="first-img" size="6">
+                        <img src="../assets/images/Izquierda.png" alt="">
+                     </ion-col>
+                     <ion-col class="second-img" size="6">
+                        <img src="../assets/images/Adrenaline.png" alt="">
+                     </ion-col>
+                  </ion-row>
+               </ion-col>
+            </ion-row>
+         </ion-grid>
+      </div>
+      <div class="container-div">
+         <ion-grid>
+            <ion-row>
+               <ion-col size="6">
+                  <ion-row>
+                     <h4 class="ion-margin rockybilly">Where to find</h4>
+                     <h4 class="ion-margin light-purple-font" id="whereis-title">FUTPLAY</h4>
+                  </ion-row>
+                  <ion-row>
+                     <h5 class="ion-margin">Mobile App</h5>
+                     <p class="ion-margin">
+                        Our app delivers a game-changing experience, 
+                        offering you a hassle-free way to build your club and challenge rivals right in your neighborhood.                   
+                     </p>
+                     <ion-button class="ion-margin light-btn" size="large">
+                        <ion-icon slot="start" name="logo-google-playstore"></ion-icon>
+                        Android
+                     </ion-button>
+                     <ion-button class="ion-margin light-btn" size="large">
+                        <ion-icon slot="start" name="logo-apple-appstore"></ion-icon>
+                        iOS
+                     </ion-button>
+                  </ion-row>
+               </ion-col>
+               <ion-col size="6">
+                  <img src="../assets/vectors/telefonos1.svg" alt="">
+               </ion-col>
+            </ion-row>
+         </ion-grid>
+      </div>
+      <div class="container-div">
+         <ion-grid >
+            <ion-row>
+               <ion-col size="6">
+                  <img src="../assets/images/Screen.png" alt="">
+               </ion-col>
+               <ion-col size="6">
+                  <ion-col size="12">
+                     <h5 class="ion-margin">Reservation System</h5>
+                     <p class="ion-margin">
+                        Our free online reservation system makes managing
+                        bookings a breeze and helps field owners to attract new customers from our vibrant user base.                    
+                     </p>
+                  </ion-col>
+                  <ion-col size="6">
+                     <ion-button class="ion-margin light-btn" size="large">
+                        Fill Form
+                     </ion-button>
+                  </ion-col>
+               </ion-col>
+            </ion-row>
+         </ion-grid>
+      </div>
+      <div class="container-div">
+         <ion-grid>
+            <ion-row class="ion-justify-content-center ion-align-items-center">
+               <ion-col class="ion-text-center" size="12">
+                  <h4 class="ion-margin inline-text rockybilly">
+                     <div></div>
+                     Next
+                  </h4>
+                  <h4 class="ion-margin inline-text">Tournament</h4>
+               </ion-col>
+               <ion-col size="6" class="ion-text-center">
+                  <p class="ion-margin">
+                     <b class="yellow-font">32 teams</b> from Costa Rica will battle it out on a
+                     <b>World Cup Format</b> as they compete for the grand prize of <b>C 500,000</b>.                       
+                  </p>
+                  <ion-button class="ion-margin light-btn" size="large">
+                     Know more
+                  </ion-button>
+               </ion-col>
+            </ion-row>
+         </ion-grid>
+      </div>
+      <div class="container-div">
 
-  
-  <div>
- 
-  </div>
-
-
+         <h4 class="ion-margin inline-text rockybilly yellow-font">
+            Traction
+         </h4>
+         <h4 class="ion-margin inline-text" style="margin: -10px;">up to date</h4>
+         <ion-grid>
+            <ion-row class="ion-justify-content-center ion-align-items-center">
+               <ion-col size="4">
+                  <ion-img class="traction-img" src="../assets/images/traction_users.png" alt=""></ion-img>
+                  <ion-item class="traction-footer ion-no-padding">                  
+                     <ion-icon name="person" class="inline-text traction-icon"></ion-icon>
+                     <h4 class="inline-text">700</h4>
+                     <p class="ion-text-uppercase inline-text"> users</p>
+                  </ion-item>
+               </ion-col>
+               <ion-col size="4">
+                  <ion-img class="traction-img" src="../assets/images/traction_teams.png" alt=""></ion-img>
+                  <ion-item class="traction-footer ion-no-padding">
+                     <ion-icon name="people" class="inline-text"></ion-icon>
+                     <h4 class="inline-text">100</h4>
+                     <p class="ion-text-uppercase inline-text"> teams</p>
+                  </ion-item>
+               </ion-col>
+               <ion-col size="4">
+                  <ion-img class="traction-img" src="../assets/images/traction_games.png" alt=""></ion-img>
+                  <ion-item class="traction-footer ion-no-padding">
+                     <ion-icon name="football" class="inline-text"></ion-icon>
+                     <h4 class="inline-text">9</h4>
+                     <p class="ion-text-uppercase inline-text"> games</p>
+                  </ion-item>
+               </ion-col>
+               <ion-col size="6">
+                  <ion-img class="traction-img" src="../assets/images/traction_field.png" alt=""></ion-img>
+                  <ion-item class="traction-footer ion-no-padding ion-align-items-center ion-text-center">
+                     <ion-icon src="../assets/icon/stadium.svg" class="inline-text filter-pink"></ion-icon>
+                     <h4 class="inline-text">5</h4>
+                     <p class="ion-text-uppercase inline-text"> fields</p>
+                  </ion-item>
+               </ion-col>
+               <ion-col size="6">
+                  <ion-img class="traction-img" src="../assets/images/traction_tournament.png" alt=""></ion-img>
+                  <ion-item class="traction-footer ion-no-padding">
+                     <ion-icon name="trophy" size="small" class="inline-text"></ion-icon>
+                     <h4 class="inline-text">1</h4>
+                     <p class="ion-text-uppercase inline-text"> tournament</p>
+                  </ion-item>
+               </ion-col>
+            </ion-row>
+         </ion-grid>
+      </div>
+      <ion-footer class="ion-no-border" mode="ios">
+         <ion-toolbar color="any">
+            <ion-grid>
+               <ion-row>
+                  <ion-col size="12" class="ion-text-center">
+                     <h5>
+                        &copy; {{year}} FUTPLAY
+                        <br>
+                        <p>
+                           Official Website
+                        </p>
+                     </h5>
+                  </ion-col>
+                  <ion-col size="12">
+                     <ion-toolbar color="any" class="ion-text-center">
+                        <ion-label>Privacy Policies</ion-label>
+                     </ion-toolbar>
+                  </ion-col>
+               </ion-row>
+            </ion-grid>
+         </ion-toolbar>
+      </ion-footer>
+   </div>
 </ion-content>
