@@ -4,7 +4,6 @@ ion-content {
 
 ion-icon{
   color: var(--ion-color-secondary);
-  font-size: 88px;
 }
 
 ion-segment {
@@ -179,6 +178,9 @@ ion-segment-button {
   width: 100%;
   height: auto;
   font-size: 48px;
+  ion-icon{
+    font-size: 88px;
+  }
 }
 
 #main-title {
