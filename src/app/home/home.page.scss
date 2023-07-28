@@ -2,6 +2,11 @@ ion-content {
   --background: var(--ion-color-primary);
 }
 
+ion-icon{
+  color: var(--ion-color-secondary);
+  font-size: 88px;
+}
+
 ion-segment {
   position: absolute;
   top: 1rem;
@@ -169,19 +174,11 @@ ion-segment-button {
 }
 
 .traction-footer{
-  --ion-item-background:#fff;
+  background: #FFF;
   color: var(--ion-color-secondary);
   width: 100%;
   height: auto;
   font-size: 48px;
-  p{
-    color: var(--ion-color-secondary);
-  }
-}
-
-.ion-no-padding {
-  --padding-end: 0px;
-  --inner-padding-end: 0px;
 }
 
 #main-title {
