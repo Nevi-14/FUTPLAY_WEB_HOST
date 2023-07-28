@@ -60,21 +60,6 @@ ion-segment-button {
   align-items: center;
 }
 
-.background-img {
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-image: url("/assets/images/main.jpg");
-  min-height: 100vh;
-  min-width: 100vw;
-  height: 100vh;
-  background-position: 50% calc(50% - 50px);
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .container-div {
   margin: 50px;
   position: relative;
@@ -187,6 +172,36 @@ ion-segment-button {
   margin: 0px 5px;
   color: #FFF;
   font-size: 48px;
+}
+
+#field-background-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("/assets/images/main.jpg");
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  background-position: 50% calc(50% - 50px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#game-background-img {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("/assets/images/background_game.png");
+  min-height: 100vh;
+  min-width: 100vw;
+  height: 100vh;
+  background-position: 50% calc(50% - 50px);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #main-title {
