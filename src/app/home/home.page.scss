@@ -62,6 +62,7 @@ ion-segment-button {
 
 .container-div {
   margin: 50px;
+  margin-top: 0px;
   position: relative;
   min-height: 100vh;
 }
@@ -172,6 +173,21 @@ ion-segment-button {
   margin: 0px 5px;
   color: #FFF;
   font-size: 48px;
+}
+
+#double-background{
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url("/assets/images/game_double_background.png");
+  min-height: 200vh;
+  min-width: 100vw;
+  height: 100vh;
+  background-position: 50% calc(50% - 50px);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #field-background-img {
