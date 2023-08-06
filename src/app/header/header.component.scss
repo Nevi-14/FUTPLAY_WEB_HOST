@@ -1,0 +1,19 @@
+ion-button {
+    position: fixed;
+    top: 2rem;
+    right: 3rem;
+    z-index: 1;
+    padding: 0;
+    --background: white;
+    --color: var(--ion-color-primary);
+    --color-hover: var(--ion-color-secondary);
+}
+
+ion-icon{
+    --color: var(--ion-color-primary);
+}
+
+#menu-btn{
+    font-size: 16px;
+    margin: 0px;
+}

@@ -6,37 +6,6 @@ ion-icon{
   color: var(--ion-color-secondary);
 }
 
-ion-segment {
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-  width: 500px;
-  height: auto;
-  border-radius: 5px;
-  --background: #fff;
-  padding: 0.5rem;
-}
-
-ion-segment-button {
-  --indicator-box-shadow: transparent !important;
-  //border-radius: 2.5rem !important;
-  margin: 5px;
-  border-radius: 5px;
-  border: 1px solid white;
-  min-width: auto;
-  text-transform: none;
-  font-size: 1rem;
-  font-weight: bold;
-  --background: white;
-  --color: var(--ion-color-primary);
-  --background-checked: var(--ion-color-primary) !important;
-  --color-checked: white;
-  --indicator-color: transparent !important; /* this solution */
-  &:hover {
-    border: 1px solid var(--ion-color-primary);
-  }
-}
-
 .container {
   position: relative;
   background: rgb(58,17,118);
@@ -198,7 +167,7 @@ ion-segment-button {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url("/assets/images/main.jpg");
+  background-image: url("/assets/images/main_bg.png");
   min-height: 100vh;
   min-width: 100vw;
   height: 100vh;
