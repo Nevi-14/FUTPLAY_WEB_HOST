@@ -10,3 +10,12 @@ function toggleNav() {
         show_menu = !show_menu;
     }
 } 
+
+$('.steps-sampling').on('click','a', function(){
+    $(this).addClass('active').siblings().removeClass('active');
+ });
+ 
+ $("a").click(function(){
+    $("a").removeClass("active");
+     $(this).addClass("active");
+ });
