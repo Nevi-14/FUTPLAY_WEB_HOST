@@ -4,6 +4,7 @@ import { HeaderComponent } from '../header/header.component';
 import { IonicModule } from '@ionic/angular';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon'; 
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
     CommonModule,
     IonicModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent
