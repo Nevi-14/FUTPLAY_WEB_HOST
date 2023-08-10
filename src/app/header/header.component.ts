@@ -2,7 +2,7 @@ import { ViewChild } from '@angular/core';
 import { ChangeDetectorRef } from '@angular/core';
 import { AfterViewInit } from '@angular/core';
 import { Component, OnInit } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -18,11 +18,9 @@ export class HeaderComponent  implements OnInit, AfterViewInit {
 
   ngAfterViewInit(){
     this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
+      if (event instanceof NavigationStart) {
+        document.getElementById("nav-menu").style.width = "0%";
         this.show_menu = false;
-        if(!this.show_menu){
-          document.getElementById("nav-menu").style.width = "0%";
-        }
       }
     });
   }
@@ -36,6 +34,5 @@ export class HeaderComponent  implements OnInit, AfterViewInit {
         nav_menu.style.width = "100%";
         this.show_menu = !this.show_menu;
     }
-    this.cd.detectChanges();
   } 
 }
