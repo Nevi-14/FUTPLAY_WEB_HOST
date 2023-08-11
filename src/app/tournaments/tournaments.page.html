@@ -1,35 +1,221 @@
 <ion-content [fullscreen]="true">
   <div class="container">
     <div class="container-div">
-      <ion-grid class="center-container">
+      <ion-grid>
          <ion-row>
             <ion-col size="6">
                <ion-row>
                   <ion-col size="12">
-                     <h4 class="ion-margin pink-font">FUTPLAY</h4>
-                     <h4 class="ion-margin purple-font rockybilly">Tournaments</h4>
+                     <ion-img id="logo" src="../assets/images/logo.png"></ion-img>
+                     <h4>FUTPLAY</h4>
+                     <h4 id="tournaments-title" class="ion-margin pink-font rockybilly">Tournaments</h4>
                   </ion-col>
-                  <ion-col size="12">
+                  <ion-col size="10">
                      <p class="ion-margin">
                         Get ready to elevate your game with FutPlay!
-                        As a user, you can qualify for our thrilling cashback tournaments, where big prizes and intense 
-                        competition await.
+                        As a user, you can qualify for our <b>thrilling cashback</b>
+                        tournaments, where <b>big prizes</b> and <b>intense competition</b> await.
                      </p>
                   </ion-col>
                </ion-row>
             </ion-col>
             <ion-col size="6">
                <ion-row>
-                  <ion-col class="first-img" size="6">
-                     <img src="../assets/images/Izquierda.png" alt="">
+                  <ion-col id="first-img" size="6">
+                     <ion-img src="../assets/images/tournament1.png" alt=""></ion-img>
                   </ion-col>
-                  <ion-col class="second-img" size="6">
-                     <img src="../assets/images/Adrenaline.png" alt="">
+                  <ion-col id="second-img" size="6">
+                     <ion-img src="../assets/images/tournament2.png" alt=""></ion-img>
                   </ion-col>
                </ion-row>
             </ion-col>
          </ion-row>
       </ion-grid>
+   </div>
+   <div id="standings" class="container-div">
+      <div id="standings-text">
+         <h5>World Cup Qualifiers Standing</h5>
+         <p>Will ignite fierce competition as the top 32 teams battle it out in an electrifying World Cup. 
+            Check our qualification rankings to see how you measure up against other teams.</p>
+      </div>
+      <ion-grid>
+         <ion-row class="table-team">
+            <ion-col size="1">
+               <span>1&#176;</span> 
+            </ion-col>
+            <ion-col size="1">
+               <ion-icon name="contact"></ion-icon>
+            </ion-col>
+            <ion-col size="8">
+               COMPAS FC
+            </ion-col>
+            <ion-col size="2">
+               90 pts
+            </ion-col>
+         </ion-row>
+         <ion-row class="table-team">
+            <ion-col size="1">
+               <span>2&#176;</span> 
+            </ion-col>
+            <ion-col size="1">
+               <ion-icon name="contact"></ion-icon>
+            </ion-col>
+            <ion-col size="8">
+               ZANATES FC
+            </ion-col>
+            <ion-col size="2">
+               60 pts
+            </ion-col>
+         </ion-row>
+         <ion-row class="table-team">
+            <ion-col size="1">
+               <span>3&#176;</span> 
+            </ion-col>
+            <ion-col size="1">
+               <ion-icon name="contact"></ion-icon>
+            </ion-col>
+            <ion-col size="8">
+               LOS GALACTICOS
+            </ion-col>
+            <ion-col size="2">
+               30 pts
+            </ion-col>
+         </ion-row>
+         <ion-row class="table-team">
+            <ion-col size="1">
+               <span>4&#176;</span> 
+            </ion-col>
+            <ion-col size="1">
+               <ion-icon name="contact"></ion-icon>
+            </ion-col>
+            <ion-col size="8">
+               FUTBOL CLUB MOYA
+            </ion-col>
+            <ion-col size="2">
+               20 pts
+            </ion-col>
+         </ion-row>
+         <ion-row class="table-team">
+            <ion-col size="1">
+               <span>5&#176;</span> 
+            </ion-col>
+            <ion-col size="1">
+               <ion-icon name="contact"></ion-icon>
+            </ion-col>
+            <ion-col size="8">
+               LA CARA&#209;A
+            </ion-col>
+            <ion-col size="2">
+               10 pts
+            </ion-col>
+         </ion-row>
+      </ion-grid>
+   </div>
+   <div class="container-div">
+      <ion-grid>
+         <ion-row>
+            <ion-col size="6">
+               <ion-row>
+                  <ion-col size="12">
+                     <h5>Our last tournament</h5>
+                  </ion-col>
+                  <ion-col class="ion-margin" size="10">
+                     <p>
+                        We recently made history with the <b class="pink-font">largest tournament ever in Costa Rica.</b>
+                     </p>
+                     <p>
+                        Featuring 64 teams competing over three weekends 
+                        for a massive half a million colones prize.
+                     </p>
+                     <p>
+                        Sponsors like <b>Rooster Energy Drink</b> and <b>SIP Energy Bowl</b> were excited to join as the 
+                        viewership expanded beyond the pitch and onto livestream platforms.
+                     </p>
+                  </ion-col>
+               </ion-row>
+            </ion-col>
+            <ion-col size="6">
+               <ion-row>
+                  <ion-col size="12">
+                     <h6 id="winners-header" class="rockybilly yellow-font">Tournament winners</h6>
+                     <ion-img src="../assets/images/tournament_winners.png" alt=""></ion-img>
+                  </ion-col>
+               </ion-row>
+            </ion-col>
+         </ion-row>
+      </ion-grid>
+   </div>
+   <div class="container-div">
+      <h1>Gallery</h1>
+      <div class="swiper">
+         <swiper-container 
+         slides-per-view="3" 
+         navigation="true" 
+         pagination="true"
+         speed="500" 
+         loop="true">
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery1.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery2.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery3.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery4.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery5.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery6.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery7.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery8.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery9.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery10.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery11.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+         <div class="swiper-slide">
+            <swiper-slide>
+               <ion-img src="../assets/images/gallery12.png" alt=""></ion-img>
+            </swiper-slide>
+         </div>
+       </swiper-container>
+      </div>
    </div>
   </div>
 </ion-content>

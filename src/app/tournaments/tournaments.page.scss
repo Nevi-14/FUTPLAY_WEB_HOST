@@ -1,0 +1,53 @@
+.swiper{
+    padding: 2% 10% 4%;
+}
+
+.table-team{
+    background-color: rgb(199, 199, 199, 0.16);
+    margin: 2em 0px;
+    color: black;
+}
+
+#logo{
+    height: 200px;
+    width: 30%;
+}
+
+#tournaments-title{
+    font-size: 48px;
+    margin-top: 10px;
+}
+
+#first-img{
+    position: absolute;
+    margin-top: 3%;
+}
+
+#second-img{
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 38%;
+    ion-img::part(image) {
+        width: 80%;
+    }
+}
+
+#standings{
+    margin: 50px 0px;
+    padding: 50px;
+    background-color: white;
+    color: var(--ion-color-primary);
+}
+
+#standings-text{
+    width: 50%;
+    h5{
+        letter-spacing: -1px;
+        width: 150%;
+    }
+}
+
+#winners-header{
+    float: inline-end;
+    font-size: 24px;
+}

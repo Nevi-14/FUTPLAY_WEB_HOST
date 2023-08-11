@@ -22,7 +22,7 @@ import { TournamentsPage } from './tournaments/tournaments.page';
     SharedModule,
     MatToolbarModule,
     MatButtonModule,
-    RouterModule
+    RouterModule,
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
