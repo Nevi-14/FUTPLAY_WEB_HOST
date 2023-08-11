@@ -1,64 +1,64 @@
-ion-button {
-    position: fixed;
-    top: 2rem;
-    right: 3rem;
-    z-index: 1;
-    padding: 0;
-    --background: white;
-    --color: var(--ion-color-primary);
-    --color-hover: var(--ion-color-secondary);
-}
-
-ion-icon{
-    --color: var(--ion-color-primary);
-}
-
 .overlay {
-    height: 100%;
-    width: 0%;
-    position: fixed; 
-    z-index: 1;
-    left: 0;
-    top: 0;
-    background-color: rgb(170, 31, 255, 0.90);
-    overflow-x: hidden;
-    transition: 0.5s; 
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 10%;
-    width: 100%; 
-    text-align: center; 
-    margin-top: 15px; 
+  height: 100%;
+  width: 0%;
+  position: fixed; 
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(170, 31, 255, 0.90);
+  overflow-x: hidden;
+  transition: 0.5s; 
 }
   
-  /* The navigation links inside the overlay */
-  .overlay a {
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
+.overlay-content {
+  position: relative;
+  top: 10%;
+  width: 100%; 
+  text-align: center; 
+  margin-top: 15px; 
+}
   
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
-    color: #FC14FF;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
+/* The navigation links inside the overlay */
+.overlay a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
 
-  .rockybilly {
-    font-family: "Rockybilly", sans-serif;
-  }
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #FC14FF;
+}
 
-  .active {
-    color: #FC14FF !important;
-  }
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.nav-option {
+  font-family: "Rockybilly", sans-serif;
+}
+
+.active {
+  color: #FC14FF !important;
+}
+
+#menu-btn {
+  position: fixed;
+  top: 2rem;
+  right: 3rem;
+  z-index: 1;
+  padding: 0;
+  --background: white;
+  --color: var(--ion-color-primary);
+  --color-hover: var(--ion-color-secondary);
+}
+
+#menu-icon{
+  --color: var(--ion-color-primary);
+}
