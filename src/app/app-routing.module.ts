@@ -15,6 +15,10 @@ const routes: Routes = [
     path: 'tournaments',
     loadChildren: () => import('./tournaments/tournaments.module').then( m => m.TournamentsPageModule)
   },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
+  },
 ];
 
 @NgModule({
