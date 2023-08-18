@@ -77,6 +77,10 @@ ion-icon{
   z-index: -1;
 }
 
+.container-div:not(:first-child){
+  padding-top: 0px;
+}
+
 .center-text {
   display: flex;
   justify-content: center;
@@ -94,7 +98,6 @@ ion-icon{
 .rockybilly {
   font-family: "Rockybilly", sans-serif;
   font-size: 40px;
-  margin-top: 50px;
 }
 
 .pink-font {

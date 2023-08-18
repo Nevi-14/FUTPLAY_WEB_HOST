@@ -70,7 +70,7 @@ Support Mascot">
       </div>
       <div class="container-div">
          <ion-grid>
-            <ion-row>
+            <ion-row class="ion-align-items-center">
                <ion-col size="5">
                   <h4 class="inline-text">OUR</h4>
                   <h4 class="inline-text pink-font rockybilly">Awards</h4>
@@ -80,7 +80,36 @@ Support Mascot">
                   </p>
                </ion-col>
                <ion-col size="7">
-                  <!--Swiper of awards-->
+                  <div class="swiper">
+                     <swiper-container
+                     navigation="true"
+                     effect="coverflow" 
+                     centered-slides="true"
+                     slides-per-view="auto" 
+                     loop="true"
+                     coverflow-effect-rotate="50" 
+                     coverflow-effect-stretch="100" 
+                     coverflow-effect-depth="1000"
+                     coverflow-effect-modifier="1" 
+                     coverflow-effect-slide-shadows="true">
+                        <div class="swiper-slide">
+                           <swiper-slide>
+                              <ion-img class="img-awards" src="../assets/images/awards1.png" alt=""></ion-img>
+                           </swiper-slide>
+                        </div>
+                        <div class="swiper-slide">
+                           <swiper-slide>
+                              <ion-img class="img-awards" src="../assets/images/awards2.png" alt=""></ion-img>
+                           </swiper-slide>
+                        </div>
+                        <div class="swiper-slide">
+                           <swiper-slide>
+                              <ion-img class="img-awards" src="../assets/images/awards3.png" alt=""></ion-img>
+                           </swiper-slide>
+                        </div>
+                     </swiper-container>
+                     <b class="center-text">$ 10,000 prize at CSU sunstone launch startup competition: California State Competition</b>
+                  </div>
                </ion-col>
             </ion-row>
          </ion-grid>

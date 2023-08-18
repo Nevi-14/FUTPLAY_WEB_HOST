@@ -1,12 +1,13 @@
+h5, h6{
+    margin: 0;
+}
 ion-row{
-    padding-top: 100px;
+    padding-top: 50px;
 }
-.container-div{
-    padding-bottom: 0;
-}
+
 #exposure{
     background-color: white;
-    padding: 50px 50px;
+    padding: 25px 50px;
 }
 
 #img-magazine{
@@ -73,4 +74,8 @@ ion-row{
     padding:8px;
     background-color:var(--ion-color-secondary);
     opacity: 0.8;
+}
+
+.img-awards{
+    height: 500px;
 }
