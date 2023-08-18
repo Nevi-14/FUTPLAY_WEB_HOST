@@ -1,0 +1,37 @@
+ion-row{
+    padding-top: 100px;
+}
+.container-div{
+    padding-bottom: 0;
+}
+#exposure{
+    background-color: white;
+    padding: 50px 50px;
+}
+
+#img-magazine{
+    margin-top: 50px;
+    height: 600px;
+}
+
+.img-exposure{
+    margin-top: 10px;
+    width: 380px;
+    margin: 0 auto;
+}
+
+.text-exposure{
+    h5, p{
+        color: var(--ion-color-primary);
+    }
+    h6{
+        font-size: 45px;
+        color: var(--ion-color-secondary);
+    }
+}
+
+.center-btn{
+    margin: 0 auto;
+    display: block;
+    width: 15%;
+}
