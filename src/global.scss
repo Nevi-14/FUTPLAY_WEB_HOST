@@ -25,6 +25,11 @@
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
 
+ion-content {
+  --background: var(--ion-color-primary);
+  letter-spacing: -1px;
+}
+
 h1, h2, h3, h4{
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
@@ -47,10 +52,6 @@ p{
   font-family: 'Roboto', sans-serif; 
   font-size: 25px;
   font-weight: 300;
-}
-
-ion-content {
-  --background: var(--ion-color-primary);
 }
 
 ion-icon{
@@ -76,6 +77,10 @@ ion-icon{
   z-index: -1;
 }
 
+.container-div:not(:first-child){
+  padding-top: 0px;
+}
+
 .center-text {
   display: flex;
   justify-content: center;
@@ -93,7 +98,6 @@ ion-icon{
 .rockybilly {
   font-family: "Rockybilly", sans-serif;
   font-size: 40px;
-  margin-top: 50px;
 }
 
 .pink-font {
@@ -102,6 +106,10 @@ ion-icon{
 
 .filter-pink{
   filter: invert(22%) sepia(95%) saturate(3456%) hue-rotate(267deg) brightness(100%) contrast(117%);
+}
+
+.purple-font{
+  color: var(--ion-color-primary);
 }
 
 .light-purple-font{
@@ -127,6 +135,12 @@ ion-icon{
   --background: white;
   --color: var(--ion-color-secondary);
   --background-hover: var(--ion-color-secondary);
+}
+
+.dark-btn {
+  --background: var(--ion-color-secondary);
+  --color: white;
+  --background-hover: var(--ion-color-primary);
 }
 
 .traction-img{
@@ -157,4 +171,15 @@ ion-icon{
   margin: 0px 5px;
   color: #FFF;
   font-size: 48px;
+}
+
+.swiper{
+  padding: 2% 10% 4%;
+}
+
+.logo{
+  position: absolute;
+  top: 5%;
+  height: 180px;
+  z-index: 1;
 }
