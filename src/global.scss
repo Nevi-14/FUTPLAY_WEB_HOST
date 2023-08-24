@@ -183,6 +183,14 @@ ion-icon{
   padding: 2% 15% 4%;
 }
 
+swiper-container::part(bullet-active) {
+  background-color: white;
+}
+
+swiper-container::part(button-prev), swiper-container::part(button-next){
+  color: white;
+}
+
 .logo{
   position: absolute;
   top: 5%;
