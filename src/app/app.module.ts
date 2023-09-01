@@ -10,8 +10,7 @@ import { SharedModule } from './shared/shared.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
-import { HomePage } from './home/home.page';
-import { TournamentsPage } from './tournaments/tournaments.page';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +22,7 @@ import { TournamentsPage } from './tournaments/tournaments.page';
     MatToolbarModule,
     MatButtonModule,
     RouterModule,
+    HttpClientModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
