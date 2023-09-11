@@ -1,5 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import Chart from 'chart.js/auto';
+import {MatDialog, MAT_DIALOG_DATA, MatDialogRef, MatDialogModule} from '@angular/material/dialog';
+import {NgIf} from '@angular/common';
+import {MatButtonModule} from '@angular/material/button';
+import {FormsModule} from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { PromotionTournamentDialogComponent } from '../components/promotion-tournament-dialog/promotion-tournament-dialog.component';
 
 @Component({
   selector: 'app-admin',
@@ -12,7 +19,7 @@ export class AdminPage implements OnInit {
   public reservation_doughnut_chart: any;
   public profit_doughnut_chart: any;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
     this.createChart();
@@ -119,6 +126,14 @@ export class AdminPage implements OnInit {
           ctx.save();
         }
       }]
+    });
+  }
+
+  openDialog(){
+    const dialogRef = this.dialog.open(PromotionTournamentDialogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
     });
   }
 }
