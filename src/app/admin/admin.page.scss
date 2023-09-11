@@ -1,8 +1,76 @@
 .container-admin{
-    height: 100vh;
+    padding: 0px 50px;
+    min-height: 100vh;
     background-color: white;
 }
 
+.dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.regular-dot{
+    background-color: #bbb;
+}
+
+.futplay-dot{
+    background-color: #AA1FFF;
+}
+
+.regular-label, .regular-number{
+    color: #919191;
+}
+
+.regular-number{
+    float: right;
+}
+
+.futplay-label, .futplay-number{
+    color: black;
+}
+
+.futplay-number{
+    float: right;
+}
+
+.stats{
+    padding-top: 25px;
+}
+
 .card-title{
+    font-size: 24px;
+    font-weight: 500;
     color: var(--ion-color-primary);
+}
+
+.month{
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+}
+
+.chart{
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    height: 175px !important;
+    width: 175px !important;
+}
+
+.field{
+    margin: 20px 0px;
+}
+
+#title{
+    color: var(--ion-color-primary);
+    font-size: 40px;
+    font-weight: 500;
+}
+
+#promotion-tournament{
+    position: relative;
+    height: 100%;
 }

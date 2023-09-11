@@ -41,14 +41,14 @@ export class AdminPage implements OnInit {
         ]
       },
       options: {
-        aspectRatio: 2.5
+        aspectRatio: 2.5,
+        responsive: true,
       }
     });
     this.reservation_doughnut_chart = new Chart("reservation-doughnut-chart", {
       type: 'doughnut', //this denotes tha type of chart
 
       data: {// values on X-Axis
-        labels: ['Reservaciones regulares', 'Reservaciones Futplay'],
 	       datasets: [
           {
             data: [20, 6],
@@ -57,13 +57,35 @@ export class AdminPage implements OnInit {
         ]
       },
       options: {
-        aspectRatio: 3
-      }
+        aspectRatio: 1,
+        cutout: "80%", 
+        responsive: true
+      },
+      plugins: [{
+        id: 'text',
+        beforeDraw: function(chart, a, b) {
+          var width = chart.width,
+            height = chart.height,
+            ctx = chart.ctx;
+    
+          ctx.restore();
+          var fontSize = (height / 75).toFixed(2);
+          ctx.font = "bold " + fontSize + "em Roboto, sans-serif";
+          ctx.textBaseline = "middle";
+          ctx.fillStyle = "#3A1176";
+    
+          var text = "26",
+            textX = Math.round((width - ctx.measureText(text).width) / 2),
+            textY = height / 2;
+    
+          ctx.fillText(text, textX, textY);
+          ctx.save();
+        }
+      }]
     });
     this.profit_doughnut_chart = new Chart("profit-doughnut-chart", {
       type: 'doughnut', //this denotes tha type of chart
       data: {// values on X-Axis
-        labels: ['Reservaciones regulares', 'Reservaciones Futplay'],
 	       datasets: [
           {
             data: [300, 90],
@@ -72,8 +94,31 @@ export class AdminPage implements OnInit {
         ]
       },
       options: {
-        aspectRatio: 3
-      }
+        aspectRatio: 1,
+        cutout: "80%", 
+        responsive: true,
+      },
+      plugins: [{
+        id: 'text',
+        beforeDraw: function(chart, a, b) {
+          var width = chart.width,
+            height = chart.height,
+            ctx = chart.ctx;
+    
+          ctx.restore();
+          var fontSize = (height / 75).toFixed(2);
+          ctx.font = "bold " + fontSize + "em Roboto";
+          ctx.textBaseline = "middle";
+          ctx.fillStyle = "#3A1176";
+    
+          var text = "390k",
+            textX = Math.round((width - ctx.measureText(text).width) / 2),
+            textY = height / 2;
+    
+          ctx.fillText(text, textX, textY);
+          ctx.save();
+        }
+      }]
     });
   }
 }

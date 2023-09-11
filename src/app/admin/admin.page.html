@@ -1,55 +1,92 @@
 <ion-content [fullscreen]="true">
   <div class="container-admin">
-    <ion-grid>
-      <ion-row>
-        <ion-col size="4">
-          <mat-selection-list #shoes>
-            <mat-list-option>
-              <b>Cancha #1</b> El Bosco
-            </mat-list-option>
-            <mat-list-option>
-              <b>Cancha #2</b> Rolo
-            </mat-list-option>
-            <mat-list-option>
-              <b>Cancha #3</b> Manolo's
-            </mat-list-option>
-            <mat-list-option>
-              <b>Cancha #4</b> Ocean
-            </mat-list-option>
-          </mat-selection-list>
-        </ion-col>
-        <ion-col size="4">
-          <mat-card>
-            <mat-card-content>          
-              <h6 class="card-title">Reservaciones</h6>
-              <canvas id="reservation-doughnut-chart">{{ reservation_doughnut_chart }}</canvas>
-            </mat-card-content>
-          </mat-card>          
-        </ion-col>
-        <ion-col size="4">
-          <mat-card>
-            <mat-card-content>          
-              <h6 class="card-title">Ganancias</h6>
-              <canvas id="profit-doughnut-chart">{{ profit_doughnut_chart }}</canvas>
-            </mat-card-content>
-          </mat-card> 
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="8">
-          <mat-card>
-            <mat-card-content>          
-              <h6 class="card-title">Reservaciones</h6>
-              <canvas id="reservation-bar-chart">{{ reservation_bar_chart }}</canvas>
-            </mat-card-content>
-          </mat-card> 
-        </ion-col>
-        <ion-col size="4">
-          <a href="#">          
-            <ion-img src="../assets/images/promotion.png"></ion-img>
-          </a>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <h1 id="title">Administración</h1>
+     <ion-grid>
+        <ion-row>
+           <ion-col size="4">
+              <mat-selection-list #shoes>
+                 <mat-card class="field">
+                    <mat-card-content>
+                       <mat-list-option>
+                          <b>Cancha #1</b> El Bosco
+                       </mat-list-option>
+                    </mat-card-content>
+                 </mat-card>
+                 <mat-card class="field">
+                    <mat-card-content>
+                       <mat-list-option>
+                          <b>Cancha #2</b> Rolo
+                       </mat-list-option>
+                    </mat-card-content>
+                 </mat-card>
+                 <mat-card class="field">
+                    <mat-card-content>
+                       <mat-list-option>
+                          <b>Cancha #3</b> Manolo's
+                       </mat-list-option>
+                    </mat-card-content>
+                 </mat-card>
+                 <mat-card class="field">
+                    <mat-card-content>
+                       <mat-list-option>
+                          <b>Cancha #4</b> Ocean
+                       </mat-list-option>
+                    </mat-card-content>
+                 </mat-card>
+              </mat-selection-list>
+           </ion-col>
+           <ion-col size="4">
+              <mat-card>
+                 <mat-card-content>
+                    <h6 class="card-title">Reservaciones</h6>
+                    <p class="month">Octubre 2023</p>
+                    <canvas id="reservation-doughnut-chart" class="chart">{{ reservation_doughnut_chart }}</canvas>
+                    <div class="stats">
+                      <span class="dot regular-dot"></span>
+                      <span class="regular-label"> Reservaciones regulares</span>
+                      <span class="regular-number">20</span>
+                      <hr>
+                      <span class="dot futplay-dot"></span>
+                      <span class="futplay-label"> Reservaciones Futplay</span>
+                      <span class="futplay-number">6</span>
+                    </div>
+                 </mat-card-content>
+              </mat-card>
+           </ion-col>
+           <ion-col size="4">
+              <mat-card>
+                 <mat-card-content>
+                    <h6 class="card-title">Ganancias</h6>
+                    <p class="month">Octubre 2023</p>
+                    <canvas id="profit-doughnut-chart" class="chart">{{ profit_doughnut_chart }}</canvas>
+                    <div class="stats">
+                      <span class="dot regular-dot"></span>
+                      <span class="regular-label"> Reservaciones regulares</span>
+                      <span class="regular-number">300k</span>
+                      <hr>
+                      <span class="dot futplay-dot"></span>
+                      <span class="futplay-label"> Reservaciones Futplay</span>
+                      <span class="futplay-number">90k</span>
+                    </div>
+                 </mat-card-content>
+              </mat-card>
+           </ion-col>
+        </ion-row>
+        <ion-row>
+           <ion-col size="8">
+              <mat-card>
+                 <mat-card-content>
+                    <h6 class="card-title">Reservaciones</h6>
+                    <canvas id="reservation-bar-chart">{{ reservation_bar_chart }}</canvas>
+                 </mat-card-content>
+              </mat-card>
+           </ion-col>
+           <ion-col size="4">
+              <a href="#">
+                 <ion-img id="promotion-tournament" src="../assets/images/promotion.png"></ion-img>
+              </a>
+           </ion-col>
+        </ion-row>
+     </ion-grid>
   </div>
 </ion-content>
