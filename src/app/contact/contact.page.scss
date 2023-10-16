@@ -32,3 +32,18 @@ ion-button{
     right: 0;
     z-index: 0;
 }
+
+#social-media{
+    @media (max-width: 900px) {
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 900px) {
+    #intersect{
+        display: none;
+    }
+    #scratch{
+        display: none;
+    }
+}

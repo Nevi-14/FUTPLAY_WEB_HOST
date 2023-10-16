@@ -91,6 +91,9 @@ ion-icon{
   margin: 0 auto;
   display: block;
   width: 15%;
+  @media (max-width: 900px) {
+    width: 30%;
+  }
 }
 
 .center-container {
@@ -104,6 +107,12 @@ ion-icon{
 .rockybilly {
   font-family: "Rockybilly", sans-serif;
   font-size: 40px;
+  @media (max-width: 900px) {
+    font-size: 30px;
+  }
+  @media (min-height: 360px){
+    font-size: 24px;
+  }
 }
 
 .pink-font {
@@ -197,4 +206,8 @@ swiper-container::part(button-prev), swiper-container::part(button-next){
   left: 0;
   height: 180px;
   z-index: 1;
+  @media (max-width: 900px) {
+    top: 3%;
+    height: 100px;
+  }
 }
