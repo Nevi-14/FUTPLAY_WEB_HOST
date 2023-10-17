@@ -34,12 +34,18 @@ h1, h2, h3, h4{
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 88px;
+  @media (max-width: 900px) {
+    font-size: 60px;
+  }
 }
 
 h5{
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   font-size: 68px;
+  @media (max-width: 900px) {
+    font-size: 50px;
+  }
 }
 
 h6{
@@ -70,6 +76,9 @@ ion-icon{
   padding-top: 50px;
   position: relative;
   min-height: 100vh;
+  @media (max-width: 900px) {
+    min-height: 40%;
+}
 }
 
 .container-div::before{

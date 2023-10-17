@@ -1,24 +1,43 @@
 h5, h6{
     margin: 0;
 }
+
+#team-title{
+    @media (max-width: 900px) {
+        margin-top: 30%;
+    }
+}
+
 ion-row{
     padding-top: 50px;
+    @media (max-width: 900px) {
+        padding-top: 15%;
+    }
 }
 
 #exposure{
     background-color: white;
     padding: 25px 50px;
+    @media (max-width: 900px) {
+        padding: 0;
+    }
 }
 
 #img-magazine{
     margin-top: 50px;
-    height: 600px;
+    height: 600px;  
+    @media (max-width: 900px) {
+        margin: 0;
+    } 
 }
 
 .img-exposure{
     margin-top: 10px;
     width: 380px;
     margin: 0 auto;
+    @media (max-width: 900px) {
+        height: 300px;  
+    }
 }
 
 .text-exposure{
@@ -28,6 +47,10 @@ ion-row{
     h6{
         font-size: 45px;
         color: var(--ion-color-secondary);
+    }
+    @media (max-width: 900px) {
+        padding: 0 10%;
+        text-align: center;
     }
 }
 
@@ -55,6 +78,9 @@ ion-row{
     padding:0 8px;
     content:attr(data-text);
     transition:0.5s;
+    @media (max-width: 900px) {
+        display: none;
+    }
   }
 
 .textOverImage::first-line{
@@ -71,5 +97,8 @@ ion-row{
 }
 
 .img-awards{
-    height: 500px;
+    height: 500px; 
+    @media (max-width: 900px) {
+        height: 30%;
+    }   
 }
