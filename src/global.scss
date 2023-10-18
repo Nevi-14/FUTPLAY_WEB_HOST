@@ -77,8 +77,16 @@ ion-icon{
   position: relative;
   min-height: 100vh;
   @media (max-width: 900px) {
-    min-height: 40%;
+    max-height: auto;
+    margin: 0 25px;
+  }
 }
+
+.swiper-container{
+  @media (max-width: 900px) {
+    min-height: 40%;
+  }
+
 }
 
 .container-div::before{

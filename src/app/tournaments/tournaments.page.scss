@@ -3,7 +3,7 @@
 }
 
 .table{
-    height: 352px;
+    height: 100%;
     overflow-x: hidden;
     overflow-y: auto;
     text-align: center;
@@ -34,6 +34,9 @@
 #tournaments-title{
     font-size: 48px;
     margin-top: 10px;
+    @media (max-width: 900px) {
+        font-size: 32px;
+    }
 }
 
 #first-img{
@@ -63,13 +66,28 @@
         letter-spacing: -1px;
         width: 150%;
     }
+    @media (max-width: 900px) {
+        h5{
+            width: 100%;
+            text-align: center;
+        }
+        width: 100%;
+    }
 }
 
 #winners-header{
     float: inline-end;
     font-size: 24px;
+    @media (max-width: 900px) {
+        float: none;
+        text-align: center;
+    }
 }
 
 #tournament-left{
     margin-top: 25%;
+}
+
+#last-tournament{
+    padding-top: 10%;
 }
