@@ -127,7 +127,7 @@ ion-icon{
   @media (max-width: 900px) {
     font-size: 30px;
   }
-  @media (min-height: 360px){
+  @media (max-height: 360px){
     font-size: 24px;
   }
 }
