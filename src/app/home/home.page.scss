@@ -62,7 +62,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   @media (max-width: 900px) {
-    display: none;
+    background-image: url("/assets/images/main_bg_vertical.png");
+    min-height: auto;
+    max-width: auto;
+    height: 250px;
   }
 }
 
